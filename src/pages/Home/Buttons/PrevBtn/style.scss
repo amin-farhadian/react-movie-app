@@ -1,0 +1,23 @@
+#prev {
+  span {
+    &:before {
+      content: "\00AB";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: -15px;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover {
+    span {
+      padding-left: 15px;
+
+      &:before {
+        opacity: 1;
+        left: 0;
+      }
+    }
+  }
+}

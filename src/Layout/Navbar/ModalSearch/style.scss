@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.search-icon {
+  color: rgb(218, 214, 214);
+  font-size: 19px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover{
+    color: #fff;
+  }
+}
+
+.modal-wrapper {
+  height: 90vh;
+  width: 100%;
+  background-color: inherit !important;
+  border: none !important;
+
+  .close-modal {
+    background-color: inherit !important;
+    color: rgb(167, 167, 167) !important;
+    border: 1px solid #232931;
+    width: 47px;
+    font-size: 30px;
+  }
+
+  .search-form{
+    .input-group-append{
+      height: 44px;
+    }
+
+    input{
+      height: 44px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-mobile-screen) {
+  .search-icon {
+    font-size: 15px !important;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+img {
+  max-width: 320px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 34px;
+}
+
+@media screen and (max-width: $mid-mobile-screen) {
+  p {
+    font-size: 28px;
+  }
+}

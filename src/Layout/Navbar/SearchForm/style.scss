@@ -1,0 +1,55 @@
+@import "../../../styles/variables";
+
+.search-form {
+  width: 100%;
+
+  .input-group {
+    border-radius: 15px;
+
+    input {
+      height: 34px;
+      padding-bottom: 10px;
+      border-radius: 9px 0 0 9px;
+      font-size: 15px;
+      color: $secondary-color;
+
+      &:focus {
+        box-shadow: unset;
+      }
+
+      &::-webkit-input-placeholder {
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+      }
+    }
+
+    .input-group-append {
+      height: 34px;
+      background-color: #fff;
+      border-radius: 0 9px 9px 0;
+      padding-bottom: 2px;
+
+      button {
+        color: $secondary-color !important;
+        height: 100%;
+
+        &:focus {
+          box-shadow: unset;
+        }
+
+        &:hover {
+          color: $secondary-color !important;
+        }
+
+        i {
+          vertical-align: 1px;
+        }
+      }
+    }
+  }
+}

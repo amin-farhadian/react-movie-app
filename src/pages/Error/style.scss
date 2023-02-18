@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+img {
+  max-width: 320px;
+  margin-bottom: 0.5rem;
+}
+
+.err-first {
+  font-size: 34px;
+}
+
+.err-second {
+  font-size: 22px;
+}
+
+.tryAgain {
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 10px 13px 10px 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: $mid-mobile-screen) {
+  .err-first {
+    font-size: 30px;
+  }
+  .err-second {
+    font-size: 19px;
+  }
+  .tryAgain {
+    padding: 8px 11px 8px 11px;
+    font-size: 12px;
+  }
+}

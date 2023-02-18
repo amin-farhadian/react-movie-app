@@ -1,0 +1,98 @@
+@import "../../../../styles/variables";
+
+a {
+  display: block;
+  height: 280px;
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px -8px rgb(0 0 0 / 32%);
+
+  .custom-card {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    border: none !important;
+
+    img {
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      object-position: center;
+      transition: 0.16s ease-in-out;
+    }
+
+    .card-overlay {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.741) 20%,
+        rgba(0, 0, 0, 0.839) 50%
+      );
+      box-shadow: 0 6px 20px -8px rgb(0 0 0 / 32%);
+      opacity: 0;
+      transition: 0.1s ease-in-out;
+
+      .card-rating {
+        color: $rate-star-color;
+        font-size: 13.9px;
+        font-weight: 450;
+        margin-right: 5px;
+        transition: 0.3s;
+      }
+
+      .card-title {
+        transition: 0.3s;
+        padding: 0 10px;
+
+        h4 {
+          font-size: 14px;
+          font-weight: 450;
+        }
+
+        i {
+          color: $primary-color;
+          font-size: 19px;
+          vertical-align: -2px;
+          padding-bottom: 7px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .custom-card {
+      img {
+        opacity: 0.71;
+        transform: rotate(-2deg) scale(1.08);
+      }
+
+      .card-overlay {
+        opacity: 1;
+
+        .card-title,
+        .card-rating {
+          margin: 16px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: $mid-mobile-screen) {
+  a {
+    width: 58%;
+  }
+}

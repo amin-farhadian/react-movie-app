@@ -1,0 +1,40 @@
+@import "../../../styles//variables";
+
+.dropdown {
+  #dropdownMenuButton {
+    padding: 5px 6px 6px 7px;
+    font-size: 14px;
+    background-color: $secondary-color !important;
+    color: #fff;
+    border: none;
+    opacity: 0.8;
+    transition: 0.4s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+      background-color: $secondary-color !important;
+      box-shadow: unset !important;
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: 0 0 0.25rem 0.25rem;
+
+    .dropdown-item {
+      &.active,
+      &:active {
+        background-color: $secondary-color !important;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-mobile-screen) {
+  #dropdownMenuButton {
+    padding: 5px 4px 4px 6px !important;
+    font-size: 11px !important;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+#navbar {
+  background-color: $nav-bg-dark;
+
+  .wrapper {
+    padding: 26px 0 22px 0;
+
+    #logo {
+      font-size: 22px;
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    #all-movies {
+      text-decoration: none;
+      background-color: inherit;
+      border: none;
+      color: $primary-color;
+      font-size: 16px;
+      font-weight: 550;
+      margin-top: 2.5px;
+      transition: 0.4s;
+      opacity: 0.8;
+
+      &:hover {
+        color: #fff;
+        opacity: 1;
+      }
+
+      &.active {
+        color: #fff;
+        text-shadow: 0px 0px 20px #fff;
+      }
+    }
+
+    .form-wrapper {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-mobile-screen) {
+  #logo {
+    font-size: 20px !important;
+    margin-right: 10px !important;
+  }
+
+  #all-movies {
+    font-size: 12px !important;
+  }
+}

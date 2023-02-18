@@ -1,0 +1,25 @@
+#next {
+  background-color: #046c1c;
+
+  span {
+    &:after {
+      content: "»";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -15px;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover {
+    span {
+      padding-right: 15px;
+
+      &:after {
+        opacity: 1;
+        right: 0;
+      }
+    }
+  }
+}
